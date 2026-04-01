@@ -1,12 +1,6 @@
 ## 🎮 Preview
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/901fe50d-85a1-4bcb-af4f-b9bacaaf0105" width="250"/>
-  <img src="https://github.com/user-attachments/assets/6900bbb0-c139-440e-a02a-876a947cfe65" width="250"/>
-  <img src="https://github.com/user-attachments/assets/3d44e730-f2bc-45eb-947d-58021356a7ee" width="250"/>
-  <img src="https://github.com/user-attachments/assets/af9d4bdc-69d9-4f0a-9575-55466e05eae4" width="250"/>
-  <img src="https://github.com/user-attachments/assets/2822c504-3040-473f-a068-577293a38876" width="250"/>
-</p>
+[![Watch the video](https://github.com/user-attachments/assets/901fe50d-85a1-4bcb-af4f-b9bacaaf0105)](https://github.com/user-attachments/assets/6e8819ab-6bab-420e-9f1b-118414a3abfb)
 
 # Minesweeper - Boxture Tech Challenge
 
