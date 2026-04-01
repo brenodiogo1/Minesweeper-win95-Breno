@@ -1,0 +1,42 @@
+<div class="flex-1 relative p-2 sm:p-10 flex items-center justify-center">
+  <div class="bg-[#c0c0c0] win95-outset w-full max-w-[400px] shadow-xl flex flex-col">
+    <div class="bg-[#0000a8] text-white px-1 py-[2px] flex justify-between items-center text-[13px] font-bold">
+      <span>Fastest Mine Sweepers</span>
+      <%= link_to "X", games_path, class: "win95-outset bg-[#c0c0c0] text-black w-[16px] h-[14px] flex items-center justify-center text-[10px] pb-[1px] font-bold no-underline" %>
+    </div>
+    
+    <div class="p-2 sm:p-4 text-sm flex flex-col gap-4">
+      <div class="win95-inset bg-white p-2 h-[250px] overflow-y-auto">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead class="bg-[#c0c0c0] win95-outset sticky top-[-8px]">
+            <tr>
+              <th class="font-normal px-1 py-[2px]">Level</th>
+              <th class="font-normal px-1 py-[2px]">Name</th>
+              <th class="font-normal px-1 py-[2px]">Time</th>
+              <th class="font-normal px-1 py-[2px]">Clicks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @scores.each do |score| %>
+              <tr class="border-b border-[#dfdfdf] last:border-0 hover:bg-[#0000a8] hover:text-white">
+                <td class="px-1 py-1 capitalize"><%= score.game.difficulty %></td>
+                <td class="px-1 py-1"><%= score.player_name %></td>
+                <td class="px-1 py-1"><%= score.time_taken %> s</td>
+                <td class="px-1 py-1"><%= score.clicks %></td>
+              </tr>
+            <% end %>
+            <% if @scores.empty? %>
+              <tr>
+                <td colspan="4" class="text-center py-4 text-gray-500 italic">No records yet.</td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="flex justify-end">
+        <%= link_to "Close", games_path, class: "win95-outset bg-[#c0c0c0] px-6 py-1 font-bold text-black no-underline hover:bg-[#dfdfdf]" %>
+      </div>
+    </div>
+  </div>
+</div>
