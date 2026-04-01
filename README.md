@@ -88,3 +88,5 @@ Recursion in Ruby can lead to `SystemStackError` (Stack Overflow) on large board
    ```
 
 Visit `http://localhost:3000` to play the game!
+<img width="1846" height="877" alt="image" src="https://github.com/user-attachments/assets/a0a604d2-668c-465d-b004-d97856cb5932" />
+
