@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    /* Keep shadcn vars for other components if needed, but we will use raw colors for the game */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#008080] text-foreground; /* Classic Win95 desktop background */
+  }
+}
+
+@layer utilities {
+  .font-digital {
+    font-family: 'VT323', monospace;
+  }
+
+  .win95-bg {
+    background-color: #c0c0c0;
+  }
+
+  .win95-outset {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff #808080 #808080 #ffffff;
+  }
+
+  .win95-inset {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080 #ffffff #ffffff #808080;
+  }
+
+  .win95-cell-hidden {
+    background-color: #c0c0c0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff #808080 #808080 #ffffff;
+  }
+
+  .win95-cell-hidden:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+    border-width: 1px;
+    border-color: #808080;
+  }
+
+  .win95-cell-revealed {
+    background-color: #c0c0c0;
+    border: 1px solid #808080;
+    border-bottom-color: #c0c0c0;
+    border-right-color: #c0c0c0;
+  }
+}

@@ -1,0 +1,12 @@
+<h1>Victory! Save your score</h1>
+
+<p>You won in <%= @game.clicks %> clicks and <%= (@game.finished_at - @game.created_at).to_i %> seconds!</p>
+
+<%= form_with model: [@game, @score], local: true do |f| %>
+  <div>
+    <%= f.label :player_name, "Enter your name:" %><br>
+    <%= f.text_field :player_name, required: true %>
+  </div>
+  <br>
+  <%= f.submit "Save Score" %>
+<% end %>
