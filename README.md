@@ -10,7 +10,7 @@ As requested, this application is built entirely with server-side logic in Ruby,
 
 ---
 
-## 🏗️ Architectural Decisions & Answers to the Prompt
+## 🏗️ Architectural Decisions & Answers to the challenge.
 
 ### 1. How would you approach this?
 My approach relies on traditional Server-Side Rendering (SSR) combined with Rails 7's Hotwire (Turbo) capabilities. This allows the game to feel instantaneous and interactive (like a modern app) while strictly adhering to the "No JavaScript" rule for the game logic. Every click on a cell sends a standard HTTP/Turbo request to the controller, the Ruby service processes the game state, and the server renders the updated HTML for the specific cells changed.
